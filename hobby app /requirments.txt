@@ -1,3 +1,0 @@
-tornado==4.5.2
-Jinja2==2.9.6
-tornado-alf
