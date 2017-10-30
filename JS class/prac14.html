@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+var arr = [3,4,5,6,7,8,9,9,1,33,44, "cat", "dog", 55,2];
+arr.sort();
+console.log(arr);
+
+var q = prompt("what do you want to remove ?");
+var finder = arr.indexOf(q);
+
+var v = (finder > -1)? arr.splice(finder,1) : false;
+
+console.log(v);
+
+
+
+console.log(arr);
+
+        </script>
+
+    </body>
+</html>
