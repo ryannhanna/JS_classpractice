@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+var answer = "something went wrong";
+var output = document.getElementById('output');
+var question = prompt("ask me anything");
+var randomNumber = Math.floor(Math.random()*6);
+switch (randomNumber){
+  case 0:
+    answer = "it will work out";
+    break;
+  case 1:
+  answer = "Maybe, Maybe Not";
+    break
+  case 2:
+  answer= "Probably Not";
+    break
+  case 3:
+    answer = "Not likely";
+      break
+    default:
+      answer="I dont know about that";
+
+}
+output.innerHTML= "you asked me" + question+"<br> I think that"+answer;
+
+    </script>
+  </body>
+</html>

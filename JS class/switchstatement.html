@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id= "output">Switch Statements</div>
+    <script>
+
+var myTime = prompt("What ARE YOU DOING?");
+
+var output = document.getElementById('output');
+
+var html;
+
+switch(myTime){
+  case 'Get up':
+    html = "8:00AM";
+    break;
+
+  case 'Lunch':
+    html = "12:00PM"
+    break;
+  case 'Dinner':
+    html = "6:00PM";
+    break;
+    default:
+    html = "Not found";
+}
+output.innerHTML = html;
+    </script>
+
+  </body>
+</html>
