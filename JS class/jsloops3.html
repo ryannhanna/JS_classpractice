@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <div id = "output"></div>
+  <body>
+
+    <script>
+
+    var output = document.getElementById('output');
+    var caloriesBanana = 89;
+    var bananas = prompt("How many bananas do you want to eat?");
+    var total = 0;
+    var holder;
+
+
+    // 89 calories
+
+for(var x = 1; x <= bananas; x++){
+  total += caloriesBanana;
+  holder = x > 1 ? "bananas another " : "banana"
+
+  output.innerHTML += "You ate "+x+" "+ holder+" "+caloriesBanana+ " " + "calories added to your total now at"+ " "+total+"<br>";
+
+}
+
+output.innerHTML += "Your total calorie count is"+total;
+
+
+    </script>
+  </body>
+</html>

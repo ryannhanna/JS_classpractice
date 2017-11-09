@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style
+
+    td {border:1px solid black;}
+    </style>
+  </head>
+  <body>
+    <div id ="output"></div>
+
+
+    <script>
+
+var output= document.getElementById('output');
+var html= "<table>";
+
+for(var row = 0; row< 10; row++){
+html += "<tr>";
+for(var col = 0; col<2 ;col++){
+html +="<td>Cell = "+col+"</td>";
+}
+html+="</tr>";
+}
+html+="</table>";
+output.innerHTML =html;
+    </script>
+  </body>
+</html>
